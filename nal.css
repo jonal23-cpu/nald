@@ -1,0 +1,138 @@
+body {
+    background-color:rgb(78, 229, 93);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 10px 00;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.title-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.title-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.title-section .profile-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 3px solid #ffc107;
+}
+
+.content-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    color: #666;
+}
+
+.gallery-section {
+    padding: 10px 20x;
+    max-width: 10px;
+    margin: auto;
+    text-align: center:
+}
+
+.gallery-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2,lfr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 10%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav-ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .title-section h1 {
+        font-size: 28px:
+    }
+
+    .content-section h2,
+    .gallery-section h2 {
+        font-size: 24px;
+    }
+
+    .content-section p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: lfr;
+    }
+}
